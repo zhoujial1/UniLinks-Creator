@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>UNILINKS CREATOR</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="Header">
+            <div>
+                <h1>UNILINKS CREATOR</h1>
+            </div>
+        </div>
+        <main>
+            <!--Ask for profile picture-->
+            <div class="Background">
+                <div class="ProfilePic">
+                    <p class="Title">Profile picture</p>
+                    <input type="file" id="ProfilePic" name="ProfilePic" accept="image/png, image/jpeg">
+                </div>
+            </div>
+
+            <!--Ask for background picture-->
+            <div class="Background">
+                <div class="BackgroundPic">
+                    <p class="Title">Background picture</p>
+                    <input type="file" id="BackgroundPic" name="BackgroundPic" accept="image/png, image/jpeg">
+                </div>
+            </div>
+
+            <!--Ask for name-->
+            <div class="Background">
+                <div class="Name">
+                    <p class="Title">Name</p>
+                    <input type="text" id="Name" name="Name" placeholder="Name">
+                </div>
+            </div>
+
+            <!--Ask for description-->
+            <div class="Background">
+                <div class="Description">
+                    <p class="Title">Description</p>
+                    <textarea id="Description" name="Description" placeholder="Description" rows="5" cols="30"></textarea>
+                </div>
+            </div>
+
+            <!--Ask for links wantd on the page-->
+            <div class="Background">
+                <div class="Links">
+                    <p class="Title">Links</p>
+                    <div>
+                        <input type="url" id="LinkInput" name="Link" placeholder="Enter a link">
+                        <button id="AddLink">Add link</button>
+                        <ul id="LinkList"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
